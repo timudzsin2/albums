@@ -26,11 +26,15 @@
     font-family: "flumefont";
     src: url("fontok/EndlessJourneyJNL.ttf") format("truetype");
 }
+@font-face{
+    font-family: "iammusicfont";
+    src: url("fontok/Swiss\ 911\ Compressed\ Regular.otf") format("opentype");
+}
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: arial;
+    font-family: helvetica;
 }
 img{
     width: 100%;
@@ -40,7 +44,7 @@ ul{
     list-style: none;
 }
 .divider{
-    height:30px;
+    height: 2vw;
     background-color: black;
 }
 
@@ -49,14 +53,14 @@ body{
     background-color: black;
 }
 nav{
-    height:30px;
+    height: 2vw;
     background-color: black;
 }
 
 
 
 #blonde-titlecard{
-    height:600px;
+    height:30vw;
     text-align: center;
     padding: 60px;
     position: relative; /* To position the video inside */
@@ -91,8 +95,9 @@ nav{
 
 
 
+
 #trench-titlecard{
-    height:600px;
+    height:30vw;
     text-align: center;
     padding: 60px;
     position: relative;
@@ -127,8 +132,9 @@ nav{
 
 
 
+
 #iammusic-titlecard{
-    height:600px;
+    height:30vw;
     text-align: center;
     padding: 60px;
     position: relative;
@@ -166,7 +172,6 @@ nav{
 }
 #iammusic-article-article *{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.8vw;
     font-weight: bold;
     text-align: center;
     margin: auto;
@@ -187,14 +192,15 @@ nav{
     margin-left: 0.1vw;
 }
 #iammusic-article-article-3words *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.9vw;
+    font-family: "iammusicfont";
 }
 
 
 
 
 #hithisisflume-titlecard{
-    height:600px;
+    height:30vw;
     text-align: center;
     padding: 60px;
     position: relative;
@@ -229,8 +235,9 @@ nav{
 
 
 
+
 #astroworld-titlecard{
-    height:600px;
+    height:30vw;
     text-align: center;
     padding: 60px;
     position: relative;
@@ -265,8 +272,9 @@ nav{
 
 
 
+
 #heartbreak-titlecard{
-    height:600px;
+    height:30vw;
     text-align: center;
     padding: 60px;
     position: relative;
@@ -302,8 +310,9 @@ nav{
 
 
 
+
 #minecraft-titlecard{
-    height:600px;
+    height:30vw;
     text-align: center;
     padding: 60px;
     position: relative;
@@ -338,8 +347,9 @@ nav{
 
 
 
+
 #taboo-titlecard{
-    height:600px;
+    height:30vw;
     text-align: center;
     padding: 0px;
     position: relative;

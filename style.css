@@ -62,7 +62,7 @@ nav{
 #blonde-titlecard{
     height:30vw;
     text-align: center;
-    padding: 60px;
+    padding: 2vw;
     position: relative; /* To position the video inside */
     overflow: hidden; /* Optional: To hide any video overflow */
 }
@@ -76,14 +76,14 @@ nav{
 #blonde-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:160px;
-    margin-bottom:70px;
+    font-size: 10vw;
+    margin-bottom:5vw;
     font-family: "blondefont", sans-serif;
 }
 #blonde-titlecard>h2{
     color:white;
     mix-blend-mode: difference;
-    font-size:40px;
+    font-size:2vw;
 }
 #blonde-article{
     display:grid;
@@ -99,7 +99,7 @@ nav{
 #trench-titlecard{
     height:30vw;
     text-align: center;
-    padding: 60px;
+    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -113,14 +113,14 @@ nav{
 #trench-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:230px;
+    font-size:12vw;
     margin-bottom:0px;
     font-family: "trenchfont", sans-serif;
 }
 #trench-titlecard>h2{
     color:white;
     mix-blend-mode: difference;
-    font-size:40px;
+    font-size:2vw;
 }
 #trench-article{
     display:grid;
@@ -136,7 +136,7 @@ nav{
 #iammusic-titlecard{
     height:30vw;
     text-align: center;
-    padding: 60px;
+    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -150,14 +150,14 @@ nav{
 #iammusic-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:170px;
+    font-size: 12vw;
     margin-bottom:0px;
     font-family: 'Times New Roman', Times, serif;
 }
 #iammusic-titlecard>h2{
     color:white;
     mix-blend-mode: difference;
-    font-size:40px;
+    font-size:2vw;
 }
 #iammusic-article{
     display:grid;
@@ -202,7 +202,7 @@ nav{
 #hithisisflume-titlecard{
     height:30vw;
     text-align: center;
-    padding: 60px;
+    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -216,14 +216,14 @@ nav{
 #hithisisflume-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:140px;
+    font-size:11vw;
     margin-bottom:0px;
     font-family: "flumefont";
 }
 #hithisisflume-titlecard>h2{
     color:white;
     mix-blend-mode: difference;
-    font-size:40px;
+    font-size:2vw;
 }
 #hithisisflume-article{
     display:grid;
@@ -239,7 +239,7 @@ nav{
 #astroworld-titlecard{
     height:30vw;
     text-align: center;
-    padding: 60px;
+    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -253,14 +253,14 @@ nav{
 #astroworld-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:140px;
+    font-size:10vw;
     margin-bottom:0px;
     font-family: "astroworldfont";
 }
 #astroworld-titlecard>h2{
     color:white;
     mix-blend-mode: difference;
-    font-size:40px;
+    font-size:2vw;
 }
 #astroworld-article{
     display:grid;
@@ -276,7 +276,7 @@ nav{
 #heartbreak-titlecard{
     height:30vw;
     text-align: center;
-    padding: 60px;
+    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -290,15 +290,16 @@ nav{
 #heartbreak-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:90px;
-    margin-bottom:0px;
+    font-size:6vw;
+    margin-top: 3vw;
+    margin-bottom:2vw;
     font-family: "heartbreakfont";
-    letter-spacing: 20px;
+    letter-spacing: 1.5vw;
 }
 #heartbreak-titlecard>h2{
     color:white;
     mix-blend-mode: difference;
-    font-size:40px;
+    font-size:2vw;
 }
 #heartbreak-article{
     display:grid;
@@ -314,7 +315,7 @@ nav{
 #minecraft-titlecard{
     height:30vw;
     text-align: center;
-    padding: 60px;
+    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -328,14 +329,15 @@ nav{
 #minecraft-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:80px;
+    margin-top:1vw;
+    font-size:5vw;
     margin-bottom:0px;
     font-family: "minecraftfont";
 }
 #minecraft-titlecard>h2{
     color:white;
     mix-blend-mode: difference;
-    font-size:40px;
+    font-size:2vw;
 }
 #minecraft-article{
     display:grid;
@@ -365,14 +367,14 @@ nav{
 #taboo-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:340px;
+    font-size:17vw;
     margin-bottom:0px;
     font-family: "taboofont";
 }
 #taboo-titlecard>h2{
     color:white;
     mix-blend-mode: difference;
-    font-size:40px;
+    font-size:2vw;
 }
 #taboo-article{
     display:grid;

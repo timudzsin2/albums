@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "blondefont";
+    src: url("fontok/Blonde.otf") format("opentype");
+}
+@font-face{
+    font-family: "trenchfont";
+    src: url("fontok/compactablkbt_black.ttf") format("truetype");
+}
+@font-face{
+    font-family: "astroworldfont";
+    src: url("fontok/Tomato\ Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "heartbreakfont";
+    src: url("fontok/Engravers\'\ Gothic\ Regular.otf") format("opentype");
+}
+@font-face{
+    font-family: "minecraftfont";
+    src: url("fontok/Minecraftia-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "taboofont";
+    src: url("fontok/Verve.ttf") format("truetype");
+}
+@font-face{
+    font-family: "flumefont";
+    src: url("fontok/EndlessJourneyJNL.ttf") format("truetype");
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+.divider{
+    height:30px;
+    background-color: black;
+}
+
+
+body{
+    background-color: black;
+}
+nav{
+    height:30px;
+    background-color: black;
+}
+
+
+
+#blonde-titlecard{
+    height:600px;
+    text-align: center;
+    padding: 60px;
+    position: relative; /* To position the video inside */
+    overflow: hidden; /* Optional: To hide any video overflow */
+}
+#blonde-video{
+    position: absolute; /* Position the video relative to the parent container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Offset the video by its own size to center it */
+    width: 100%;
+}
+#blonde-titlecard>h1{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:160px;
+    margin-bottom:70px;
+    font-family: "blondefont", sans-serif;
+}
+#blonde-titlecard>h2{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:40px;
+}
+#blonde-article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#blonde-article-article{
+    background-color: white;
+}
+
+
+
+#trench-titlecard{
+    height:600px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+#trench-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#trench-titlecard>h1{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:230px;
+    margin-bottom:0px;
+    font-family: "trenchfont", sans-serif;
+}
+#trench-titlecard>h2{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:40px;
+}
+#trench-article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#trench-article-article{
+    background-color: yellow;
+}
+
+
+
+#iammusic-titlecard{
+    height:600px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+#iammusic-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#iammusic-titlecard>h1{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:170px;
+    margin-bottom:0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#iammusic-titlecard>h2{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:40px;
+}
+#iammusic-article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#iammusic-article-article{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#iammusic-article-article *{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.8vw;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+#iammusic-article-article-favorite *{
+    font-size: 1vw;
+    text-align: right;
+}
+#iammusic-article-article-favorite{
+    margin-bottom: 0.1vw;
+    margin-right: 0.1vw;
+}
+#iammusic-article-article-p{
+    font-size: 1vw;
+    text-align: left;
+    margin-top: 0.1vw;
+    margin-right: 8vw;
+    margin-left: 0.1vw;
+}
+#iammusic-article-article-3words *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+#hithisisflume-titlecard{
+    height:600px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+#hithisisflume-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#hithisisflume-titlecard>h1{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:140px;
+    margin-bottom:0px;
+    font-family: "flumefont";
+}
+#hithisisflume-titlecard>h2{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:40px;
+}
+#hithisisflume-article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#hithisisflume-article-article{
+    background-color: red;
+}
+
+
+
+#astroworld-titlecard{
+    height:600px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+#astroworld-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#astroworld-titlecard>h1{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:140px;
+    margin-bottom:0px;
+    font-family: "astroworldfont";
+}
+#astroworld-titlecard>h2{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:40px;
+}
+#astroworld-article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#astroworld-article-article{
+    background-color: black;
+}
+
+
+
+#heartbreak-titlecard{
+    height:600px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+#heartbreak-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#heartbreak-titlecard>h1{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:90px;
+    margin-bottom:0px;
+    font-family: "heartbreakfont";
+    letter-spacing: 20px;
+}
+#heartbreak-titlecard>h2{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:40px;
+}
+#heartbreak-article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#heartbreak-article-article{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+#minecraft-titlecard{
+    height:600px;
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+#minecraft-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#minecraft-titlecard>h1{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:80px;
+    margin-bottom:0px;
+    font-family: "minecraftfont";
+}
+#minecraft-titlecard>h2{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:40px;
+}
+#minecraft-article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#minecraft-article-article{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+#taboo-titlecard{
+    height:600px;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+#taboo-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#taboo-titlecard>h1{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:340px;
+    margin-bottom:0px;
+    font-family: "taboofont";
+}
+#taboo-titlecard>h2{
+    color:white;
+    mix-blend-mode: difference;
+    font-size:40px;
+}
+#taboo-article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#taboo-article-article{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+

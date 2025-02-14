@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timu Albumjai</title>
+    <link rel="icon" href="kepek/vinyl.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav></nav>
+    <div id="blonde-titlecard">
+        <video autoplay muted loop id="blonde-video">
+            <source src="kepek/blonde-titlecard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Blonde</h1>
+        <h2>Frank Ocean</h2>
+        <h2>2016</h2>
+    </div><div class="divider"></div>
+    <div id="blonde-article">
+        <img src="kepek/blonde.png" alt="blonde album cover">
+        <div id="blonde-article-article">
+            <p>itt van szoveg a blonderol</p>
+        </div>
+    </div><div class="divider"></div>
+    <div id="trench-titlecard">
+        <video autoplay muted loop id="trench-video">
+            <source src="kepek/trench-titlecard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>          
+        <h1>TRENCH</h1>
+        <h2>twenty one pilots</h2>
+        <h2>2018</h2>
+    </div><div class="divider"></div>
+    <div id="trench-article">
+        <img src="kepek/trench.png" alt="trench album cover">
+        <div id="trench-article-article">
+            <p>itt van szoveg a trenchről</p>
+        </div>
+    </div><div class="divider"></div>
+    <div id="iammusic-titlecard">
+        <video autoplay muted loop id="iammusic-video">
+            <source src="kepek/iammusic-titlecard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>          
+        <h1>I AM MUSIC</h1>
+        <h2>Playboi Carti</h2>
+    </div><div class="divider"></div>
+    <div id="iammusic-article">
+        <img src="kepek/iammusic.png" alt="I AM MUSIC album cover">
+        <div id="iammusic-article-article">
+            <img src="kepek/iammusic-1.png" alt="">
+            <img src="kepek/iammusic-2.png" alt="">
+            <img src="kepek/iammusic-5.png" alt="">
+            <img src="kepek/iammusic-4.png" alt="">
+            <img src="kepek/iammusic-7.png" alt="">
+            <img src="kepek/iammusic-8.png" alt="">
+            <ul id="iammusic-article-article-3words">
+                <li>Nárcisztikus</li>
+                <li>Materialista</li>
+                <li>Egoista</li>
+            </ul>
+            <div id="iammusic-article-article-favorite">
+                <h1>Kedvenc számaim:</h1>
+                <ul>
+                    <li>2024</li>
+                    <li>EVILJ0RDAN</li>
+                    <li>H00DBYAIR</li>
+                </ul>
+            </div>
+            <p id="iammusic-article-article-p">Playboi Carti ritkán ad ki zenét, olyan mintha szándékosan csinálná, ezzel különlegessé téve azt, amikor megjelenik zenéje. Azt ígérte, hogy az I AM MUSIC 2024-ben fog megjelenni, de ez nem így lett.</p>
+        </div>
+        <script>
+            function shuffleItems() {
+              let container = document.getElementById("iammusic-article-article");
+              let items = Array.from(container.children); // Convert NodeList to Array
+          
+              // Shuffle array using Fisher-Yates algorithm
+              for (let i = items.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                [items[i], items[j]] = [items[j], items[i]];
+              }
+          
+              // Reattach shuffled items to container
+              container.innerHTML = "";
+              items.forEach(item => container.appendChild(item));
+            }
+          
+            // Run shuffleItems() automatically when the page loads
+            window.onload = shuffleItems;
+        </script>
+    </div><div class="divider"></div>
+    <div id="hithisisflume-titlecard">
+        <video autoplay muted loop id="hithisisflume-video">
+            <source src="kepek/hithisisflume-titlecard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>          
+        <h1>Hi This Is Flume</h1>
+        <h2>Flume</h2>
+        <h2>2019</h2>
+    </div><div class="divider"></div>
+    <div id="hithisisflume-article">
+        <img src="kepek/hithisisflume.png" alt="Hi This Is Flume album cover">
+        <div id="hithisisflume-article-article">
+            <p>itt van szoveg az a hithisisflume</p>
+        </div>
+    </div><div class="divider"></div>
+    <div id="astroworld-titlecard">
+        <video autoplay muted loop id="astroworld-video">
+            <source src="kepek/astroworld-titlecard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>          
+        <h1>ASTROWORLD</h1>
+        <h2>Travis Scott</h2>
+        <h2>2018</h2>
+    </div><div class="divider"></div>
+    <div id="astroworld-article">
+        <img src="kepek/astroworld.png" alt="astroworld album cover">
+        <div id="astroworld-article-article">
+            <p>itt van szoveg az a astroworld</p>
+        </div>
+    </div><div class="divider"></div>
+    <div id="heartbreak-titlecard">
+        <video autoplay muted loop id="heartbreak-video">
+            <source src="kepek/808s&heartbreak-titlecard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>          
+        <h1>808s & HEARTBREAK</h1>
+        <h2>Kanye West</h2>
+        <h2>2008</h2>
+    </div><div class="divider"></div>
+    <div id="heartbreak-article">
+        <img src="kepek/808s&heartbreak.png" alt="808s & Heartbreak album cover">
+        <div id="heartbreak-article-article">
+            <p>itt van szoveg az a astroworld</p>
+        </div>
+    </div><div class="divider"></div>
+    <div id="minecraft-titlecard">
+        <video autoplay muted loop id="minecraft-video">
+            <source src="kepek/minecraft-titlecard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>          
+        <h1>Minecraft - Volume Alpha</h1>
+        <h2>C418</h2>
+        <h2>2011</h2>
+    </div><div class="divider"></div>
+    <div id="minecraft-article">
+        <img src="kepek/minecraft-volumealpha.png" alt="808s & Heartbreak album cover">
+        <div id="minecraft-article-article">
+            <p>itt van szoveg az a minecraft</p>
+        </div>
+    </div><div class="divider"></div>
+    <div id="taboo-titlecard">
+        <video autoplay muted loop id="taboo-video">
+            <source src="kepek/taboo-titlecard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>          
+        <h1>TA13OO</h1>
+        <h2>Denzel Curry</h2>
+        <h2>2018</h2>
+    </div><div class="divider"></div>
+    <div id="taboo-article">
+        <img src="kepek/taboo.png" alt="TA13OO album cover">
+        <div id="taboo-article-article">
+            <p>itt van szoveg az a taboo</p>
+        </div>
+    </div><div class="divider"></div>
+</body>
+</html>

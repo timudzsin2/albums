@@ -47,7 +47,7 @@
 }
 img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 ul{
     list-style: none;
@@ -182,8 +182,28 @@ nav{
     grid-template-columns: 1fr 1fr;
 }
 #trench-article-article{
-    background-color: yellow;
+    background-color: black;;
 }
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 49.6vw;
+    overflow: hidden;
+}
+.parallax-bg {
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    width: 100%;
+    height: 168%; /* Larger to allow movement */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('kepek/trench-5.png');
+    background-size: cover;
+    background-position: center;
+    transform: translateY(0); /* Start at normal position */
+    will-change: transform;
+}
+
 
 
 

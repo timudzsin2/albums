@@ -82,7 +82,19 @@
     <div id="trench-article">
         <img src="kepek/trench.png" alt="trench album cover">
         <div id="trench-article-article">
-            <p>itt van szoveg a trenchről</p>
+            <div class="parallax-container">
+                <div class="parallax-bg"></div>
+            </div>
+          
+            <script>
+                window.addEventListener('scroll', function() {
+                    let scrollPosition = window.scrollY;
+                    let bg = document.querySelector('.parallax-bg');
+                    if (bg) {
+                        bg.style.transform = `translateY(${scrollPosition * -0.2}px)`;
+                    }
+                });
+            </script>
         </div>
     </div><div class="divider"></div>
     <div id="iammusic-titlecard">

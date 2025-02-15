@@ -186,7 +186,7 @@ nav{
 }
 
 .parallax-container {
-    border-left: 1vw solid black;
+    border-left: 6vw solid black;
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;

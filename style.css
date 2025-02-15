@@ -86,7 +86,8 @@ nav{
     mix-blend-mode: difference;
     font-size: 10vw;
     margin-top: 2vw;
-    margin-bottom:5vw;
+    margin-bottom: 5vw;
+    clip-path: inset(0 0 0 0);
     font-family: "blondefont", sans-serif;
 }
 #blonde-titlecard>h2{

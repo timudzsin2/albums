@@ -30,11 +30,19 @@
     font-family: "iammusicfont";
     src: url("fontok/Swiss\ 911\ Compressed\ Regular.otf") format("opentype");
 }
+@font-face{
+    font-family: "helveticafont";
+    src: url("fontok/Helvetica.ttf") format("truetype");
+}
+@font-face{
+    font-family: "helveticaboldfont";
+    src: url("fontok/Helvetica-Bold.ttf") format("truetype");
+}
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: helvetica;
+    font-family: "helveticafont", Helvetica, Arial, sans-serif;
     line-height: 1;
 }
 img{
@@ -63,7 +71,6 @@ nav{
 #blonde-titlecard{
     height:30vw;
     text-align: center;
-    padding: 2vw;
     position: relative; /* To position the video inside */
     overflow: hidden; /* Optional: To hide any video overflow */
 }
@@ -78,6 +85,7 @@ nav{
     color:white;
     mix-blend-mode: difference;
     font-size: 10vw;
+    margin-top: 2vw;
     margin-bottom:5vw;
     font-family: "blondefont", sans-serif;
 }
@@ -92,6 +100,48 @@ nav{
 }
 #blonde-article-article{
     background-color: white;
+
+    background-image: url(kepek/blonde-7.png);
+    background-size: 70%;   
+    background-repeat: no-repeat;
+    background-position: top 2vw left 0vw;
+}
+#blonde-article-article-top{
+    display: grid;
+    grid-template-columns: auto 23vw;
+
+    background-image: url(kepek/blonde-2.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom 4vw left 2.4vw;
+}
+#blonde-article-article-top-left>h1{
+    font-family: "helveticaboldfont";
+    font-style: italic;
+    font-size: 1.9vw;
+    margin-top: 0.3vw;
+}
+#blonde-article-article-top-left>p{
+    font-family: "helveticafont";
+    font-size: 1.5vw;
+    margin-top: 2.3vw;
+    margin-left: 8vw;
+    margin-right: 0.3vw;
+    text-align: right;
+}
+#blonde-article-article-top-right{
+    padding-top: 1vw;
+}
+#blonde-article-article-top-right>img{
+    width: 22vw;
+    height: auto;
+}
+#blonde-article-article-bottom{
+    font-family: "helveticafont";
+    text-align: right;
+    margin-top: 0.6vw;
+    margin-right: 0.5vw;
+    font-size: 0.9vw;
 }
 
 
@@ -100,7 +150,6 @@ nav{
 #trench-titlecard{
     height:30vw;
     text-align: center;
-    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -115,6 +164,7 @@ nav{
     color:white;
     mix-blend-mode: difference;
     font-size:12vw;
+    margin-top: 2vw;
     margin-bottom:0px;
     font-family: "trenchfont", sans-serif;
 }
@@ -137,7 +187,6 @@ nav{
 #iammusic-titlecard{
     height:30vw;
     text-align: center;
-    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -152,6 +201,7 @@ nav{
     color:white;
     mix-blend-mode: difference;
     font-size: 12vw;
+    margin-top: 2vw;
     margin-bottom:0px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -203,7 +253,6 @@ nav{
 #hithisisflume-titlecard{
     height:30vw;
     text-align: center;
-    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -218,6 +267,7 @@ nav{
     color:white;
     mix-blend-mode: difference;
     font-size:11vw;
+    margin-top: 2vw;
     margin-bottom:0px;
     font-family: "flumefont";
 }
@@ -240,7 +290,6 @@ nav{
 #astroworld-titlecard{
     height:30vw;
     text-align: center;
-    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -255,6 +304,7 @@ nav{
     color:white;
     mix-blend-mode: difference;
     font-size:10vw;
+    margin-top: 3vw;
     margin-bottom:0px;
     font-family: "astroworldfont";
 }
@@ -277,7 +327,6 @@ nav{
 #heartbreak-titlecard{
     height:30vw;
     text-align: center;
-    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -293,7 +342,7 @@ nav{
     mix-blend-mode: difference;
     font-size:6vw;
     margin-top: 3vw;
-    margin-bottom:2vw;
+    margin-bottom: 1vw;
     font-family: "heartbreakfont";
     letter-spacing: 1.5vw;
 }
@@ -316,7 +365,6 @@ nav{
 #minecraft-titlecard{
     height:30vw;
     text-align: center;
-    padding: 2vw;
     position: relative;
     overflow: hidden;
 }
@@ -330,9 +378,9 @@ nav{
 #minecraft-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    margin-top:1vw;
     font-size:5vw;
-    margin-bottom:0px;
+    margin-top: 7vw;
+    margin-bottom: 2px;
     font-family: "minecraftfont";
 }
 #minecraft-titlecard>h2{
@@ -354,7 +402,6 @@ nav{
 #taboo-titlecard{
     height:30vw;
     text-align: center;
-    padding: 0px;
     position: relative;
     overflow: hidden;
 }
@@ -368,7 +415,8 @@ nav{
 #taboo-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size:17vw;
+    font-size:23vw;
+    margin-top:2vw;
     margin-bottom:0px;
     font-family: "taboofont";
 }
@@ -383,9 +431,55 @@ nav{
 }
 #taboo-article-article{
     background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(kepek/taboo-3.png);
+    background-size: 165%;   
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 
+
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    mix-blend-mode: difference;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 3vw;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 
 

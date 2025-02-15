@@ -243,6 +243,7 @@ nav{
 #iammusic-article-article{
     background-color: black;
     color: white;
+    height: 49.6vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -486,8 +487,8 @@ nav{
     transition: transform 0.5s ease-in-out;
 }
 .taboo-carousel-image {
-    width: 100%;
-    height: auto;
+    height: 49.6vw;
+    width: auto;
     object-fit: cover;
 }
 #taboo-article button {

@@ -87,7 +87,8 @@ nav{
     font-size: 10vw;
     margin-top: 2vw;
     margin-bottom: 5vw;
-    clip-path: inset(0 0 0 0);
+    font-feature-settings: "liga" 1;
+    font-display: swap;
     font-family: "blondefont", sans-serif;
 }
 #blonde-titlecard>h2{

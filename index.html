@@ -82,14 +82,22 @@
     <div id="trench-article">
         <img src="kepek/trench.png" alt="trench album cover">
         <div id="trench-article-article">
-            <div class="parallax-container">
-                <div class="parallax-bg"></div>
+            <div class="trench-parallax-container">
+                <div class="trench-parallax-bg"></div>
+                <div class="trench-overlay">
+                    <p class="trench-verse">When everyone you thought you knew</p>
+                    <p class="trench-verse">Deserts your fight, I'll go with you</p>
+                    <p class="trench-verse">You're facin' down a dark hall</p>
+                    <p class="trench-verse">I'll grab my light And go with you</p>
+                    
+
+                </div>
             </div>
-          
+
             <script>
                 window.addEventListener('scroll', function() {
                     let scrollPosition = window.scrollY;
-                    let bg = document.querySelector('.parallax-bg');
+                    let bg = document.querySelector('.trench-parallax-bg');
                     if (bg) {
                         bg.style.transform = `translateY(${scrollPosition * -0.2}px)`;
                     }

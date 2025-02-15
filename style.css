@@ -186,6 +186,7 @@ nav{
 }
 
 .parallax-container {
+    border-left: 1vw solid black;
     position: relative;
     width: 100%;
     height: 49.6vw;
@@ -268,7 +269,7 @@ nav{
     margin-left: 0.1vw;
 }
 #iammusic-article-article-3words *{
-    font-size: 2.9vw;
+    font-size: 2.7vw;
     font-family: "iammusicfont";
 }
 
@@ -475,8 +476,8 @@ nav{
 
 .taboo-carousel {
     position: relative;
-    width: 100%;
-    height: auto;
+    height: 49.6vw;
+    width: auto;
     overflow: hidden;
 }
 .taboo-carousel-container {

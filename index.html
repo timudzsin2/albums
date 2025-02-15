@@ -309,21 +309,21 @@
         <h2>2018</h2>
     </div><div class="divider"></div>
     <div id="taboo-article">
-        <div class="carousel">
-            <div class="carousel-container">
-                <img src="kepek/taboo.png" class="carousel-image">
-                <img src="kepek/taboo-1.png" class="carousel-image">
-                <img src="kepek/taboo-2.png" class="carousel-image">
+        <div class="taboo-carousel">
+            <div class="taboo-carousel-container">
+                <img src="kepek/taboo.png" class="taboo-carousel-image">
+                <img src="kepek/taboo-1.png" class="taboo-carousel-image">
+                <img src="kepek/taboo-2.png" class="taboo-carousel-image">
             </div>
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <button class="taboo-prev" onclick="prevSlide()">&#10094;</button>
+            <button class="taboo-next" onclick="nextSlide()">&#10095;</button>
         </div>
 
         <script>
             let index = 0;
 
             function showSlide() {
-                const carousel = document.querySelector('.carousel-container');
+                const carousel = document.querySelector('.taboo-carousel-container');
                 carousel.style.transform = `translateX(${-index * 33.33}%)`;
             }
 

@@ -122,7 +122,7 @@ nav{
     font-style: italic;
     font-size: 1.9vw;
     margin-top: 0.3vw;
-    filter: blur(0.03vw);
+    filter: blur(0.5px);
 }
 #blonde-article-article-top-left>p{
     font-family: "helveticafont";
@@ -145,6 +145,16 @@ nav{
     margin-top: 1.5vw;
     margin-right: 5vw;
     font-size: 0.9vw;
+}
+#boys-dont-cry-container{
+    position: relative;
+}
+#boys-dont-cry{
+    width: 10vw;
+    height: auto;
+    position: absolute;
+    top: -6vw;
+    left: 13vw;
 }
 
 
@@ -251,7 +261,7 @@ nav{
 }
 #trench-fav { padding-top: 7vw; }
 #trench-fav *{
-    color: black;
+    color: rgb(122, 122, 122);
     text-align: center;
     filter: blur(0.05vw);
     font-family: "trenchfont";
@@ -301,6 +311,10 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: hidden;
+    background-image: url(kepek/iammusic-3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #iammusic-article-article *{
     font-family: 'Times New Roman', Times, serif;
@@ -316,6 +330,8 @@ nav{
 #iammusic-article-article-favorite *{
     font-size: 1vw;
     text-align: right;
+    color: white;
+    mix-blend-mode: difference;
 }
 #iammusic-article-article-favorite{
     height: 100%;
@@ -331,10 +347,14 @@ nav{
     margin-right: 8vw;
     margin-left: 0.1vw;
     width: auto;
+    color: white;
+    mix-blend-mode: difference;
 }
 #iammusic-article-article-3words *{
     font-size: 2.6vw;
     font-family: "iammusicfont";
+    color: white;
+    mix-blend-mode: difference;
 }
 #iammusic-article-article-3words{
     padding-top: 3.5vw;

@@ -23,6 +23,10 @@
     src: url("fontok/Verve.ttf") format("truetype");
 }
 @font-face{
+    font-family: "tabooshadowfont";
+    src: url("fontok/VerveShadow.ttf") format("truetype");
+}
+@font-face{
     font-family: "flumefont";
     src: url("fontok/EndlessJourneyJNL.ttf") format("truetype");
 }
@@ -84,7 +88,8 @@ nav{
 }
 #blonde-titlecard>h1{
     color:white;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
+    position: relative;
     font-size: 10vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
@@ -93,7 +98,8 @@ nav{
 }
 #blonde-titlecard>h2{
     color:white;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
+    position: relative;
     font-size:2vw;
 }
 #blonde-article{
@@ -176,8 +182,8 @@ nav{
 }
 #trench-titlecard>h1{
     color:rgb(256, 242, 2);
-    mix-blend-mode: difference;
-    filter: blur(0.08vw);
+    mix-blend-mode: normal;
+    filter: blur(0.1vw);
     font-size:12vw;
     margin-top: 2vw;
     margin-bottom:0px;
@@ -185,8 +191,9 @@ nav{
     font-family: "trenchfont", sans-serif;
 }
 #trench-titlecard>h2{
-    color:white;
-    mix-blend-mode: difference;
+    color:rgb(219, 219, 219);
+    mix-blend-mode: normal;
+    position: relative;
     font-size:2vw;
 }
 #trench-article{
@@ -375,17 +382,20 @@ nav{
     width: 100%;
 }
 #hithisisflume-titlecard>h1{
-    color:white;
-    mix-blend-mode: difference;
+    color:#d5ffcd;
+    mix-blend-mode: normal;
+    position: relative;
     font-size:11vw;
     margin-top: 2vw;
     margin-bottom:0px;
     line-height: 1.1;
-    font-family: "flumefont";
+    font-family: 'Garamond', 'Cambria', 'Palatino Linotype', 'Book Antiqua', 'Constantia', 'Georgia', 'Times New Roman', "flumefont";
+    font-style: italic;
 }
 #hithisisflume-titlecard>h2{
-    color:white;
-    mix-blend-mode: difference;
+    color:rgb(237, 237, 237);
+    mix-blend-mode: normal;
+    position: relative;
     font-size:2vw;
 }
 #hithisisflume-article{
@@ -393,8 +403,13 @@ nav{
     grid-template-columns: 1fr 1fr;
 }
 #hithisisflume-article-article{
-    background-color: red;
+    background-color: back;
 }
+#hithisisflume-article-article *{
+    font-size: 5vw;
+    color: white;
+}
+
 
 
 
@@ -414,10 +429,10 @@ nav{
     width: 100%;
 }
 #astroworld-titlecard>h1{
-    color:rgb(232, 130, 255);
+    color:rgb(139,23,129);
 /*     filter: saturate(1000);
- */    filter: blur(0.07vw);
-    mix-blend-mode: difference;
+ */    filter: blur(0.09vw);
+    mix-blend-mode: normal;
     font-size:10vw;
     margin-top: 3vw;
     margin-bottom:0px;
@@ -425,8 +440,9 @@ nav{
     font-family: "astroworldfont";
 }
 #astroworld-titlecard>h2{
-    color:white;
-    mix-blend-mode: difference;
+    color:rgb(70, 70, 70);
+    mix-blend-mode: normal;
+    position: relative;
     font-size:2vw;
 }
 #astroworld-article{
@@ -456,7 +472,8 @@ nav{
 }
 #heartbreak-titlecard>h1{
     color:red;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
+    position: relative;
     font-size:6vw;
     margin-top: 3vw;
     margin-bottom: 1vw;
@@ -465,8 +482,9 @@ nav{
     letter-spacing: 1.5vw;
 }
 #heartbreak-titlecard>h2{
-    color:white;
-    mix-blend-mode: difference;
+    color:rgb(195,204,203);
+    mix-blend-mode: normal;
+    position: relative;
     font-size:2vw;
 }
 #heartbreak-article{
@@ -495,8 +513,8 @@ nav{
     width: 100%;
 }
 #minecraft-titlecard>h1{
-    color:white;
-    mix-blend-mode: difference;
+    color:rgb(51, 51, 51);
+    mix-blend-mode: luminosity;
     font-size:5vw;
     margin-top: 3vw;
     margin-bottom: 1vw;
@@ -504,8 +522,9 @@ nav{
     font-family: "minecraftfont";
 }
 #minecraft-titlecard>h2{
-    color:white;
-    mix-blend-mode: difference;
+    color:rgb(177, 177, 177);
+    mix-blend-mode: normal;
+    position: relative;
     font-size:2vw;
 }
 #minecraft-article{

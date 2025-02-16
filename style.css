@@ -311,7 +311,7 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: hidden;
-    background-image: url(kepek/iammusic-3.png);
+    background-image: url(kepek/iammusic-2.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -331,7 +331,6 @@ nav{
     font-size: 1vw;
     text-align: right;
     color: white;
-    mix-blend-mode: difference;
 }
 #iammusic-article-article-favorite{
     height: 100%;
@@ -348,13 +347,11 @@ nav{
     margin-left: 0.1vw;
     width: auto;
     color: white;
-    mix-blend-mode: difference;
 }
 #iammusic-article-article-3words *{
     font-size: 2.6vw;
     font-family: "iammusicfont";
     color: white;
-    mix-blend-mode: difference;
 }
 #iammusic-article-article-3words{
     padding-top: 3.5vw;
@@ -417,7 +414,9 @@ nav{
     width: 100%;
 }
 #astroworld-titlecard>h1{
-    color:white;
+    color:rgb(232, 130, 255);
+/*     filter: saturate(1000);
+ */    filter: blur(0.07vw);
     mix-blend-mode: difference;
     font-size:10vw;
     margin-top: 3vw;
@@ -456,7 +455,7 @@ nav{
     width: 100%;
 }
 #heartbreak-titlecard>h1{
-    color:white;
+    color:red;
     mix-blend-mode: difference;
     font-size:6vw;
     margin-top: 3vw;
@@ -535,7 +534,7 @@ nav{
     width: 100%;
 }
 #taboo-titlecard>h1{
-    color:white;
+    color:rgba(244,132,181,255);
     mix-blend-mode: difference;
     font-size: 21vw;
     margin-top: 0vw;

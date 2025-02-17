@@ -180,7 +180,7 @@ nav{
     transform: translate(-50%, -50%);
     width: 100%;
 }
-#trench-titlecard>h1{
+#trench-titlecard>#og{
     color:rgb(256, 242, 2);
     mix-blend-mode: normal;
     filter: blur(0.1vw);
@@ -295,10 +295,9 @@ nav{
 #iammusic-titlecard>h1{
     color:white;
     mix-blend-mode: difference;
-    font-size: 12vw;
-    margin-top: 2vw;
-    margin-bottom:0px;
+    font-size: 13vw;
     font-family: 'Times New Roman', Times, serif;
+    margin-top: 2vw;
 }
 #iammusic-titlecard>h2{
     color:white;
@@ -385,11 +384,11 @@ nav{
     color:#d5ffcd;
     mix-blend-mode: normal;
     position: relative;
-    font-size:11vw;
+    font-size: 10vw;
     margin-top: 2vw;
     margin-bottom:0px;
     line-height: 1.1;
-    font-family: 'Garamond', 'Cambria', 'Palatino Linotype', 'Book Antiqua', 'Constantia', 'Georgia', 'Times New Roman', "flumefont";
+    font-family: 'Georgia', 'Garamond', 'Cambria', 'Palatino Linotype', 'Book Antiqua', 'Constantia', 'Times New Roman', "flumefont";
     font-style: italic;
 }
 #hithisisflume-titlecard>h2{
@@ -406,7 +405,7 @@ nav{
     background-color: back;
 }
 #hithisisflume-article-article *{
-    font-size: 5vw;
+    font-size: 4.5vw;
     color: white;
 }
 
@@ -430,8 +429,7 @@ nav{
 }
 #astroworld-titlecard>h1{
     color:rgb(139,23,129);
-/*     filter: saturate(1000);
- */    filter: blur(0.09vw);
+    filter: blur(0.1vw);
     mix-blend-mode: normal;
     font-size:10vw;
     margin-top: 3vw;
@@ -441,6 +439,7 @@ nav{
 }
 #astroworld-titlecard>h2{
     color:rgb(70, 70, 70);
+    filter: blur(0.04vw);
     mix-blend-mode: normal;
     position: relative;
     font-size:2vw;
@@ -474,12 +473,12 @@ nav{
     color:red;
     mix-blend-mode: normal;
     position: relative;
-    font-size:6vw;
+    font-size:5.7vw;
     margin-top: 3vw;
     margin-bottom: 1vw;
     line-height: 1.3;
     font-family: "heartbreakfont";
-    letter-spacing: 1.5vw;
+    letter-spacing: 1.65vw;
 }
 #heartbreak-titlecard>h2{
     color:rgb(195,204,203);
@@ -513,17 +512,17 @@ nav{
     width: 100%;
 }
 #minecraft-titlecard>h1{
-    color:rgb(51, 51, 51);
-    mix-blend-mode: luminosity;
-    font-size:5vw;
-    margin-top: 3vw;
+    color:white;
+    mix-blend-mode: difference;
+    font-size:6vw;
+    margin-top: 3.5vw;
     margin-bottom: 1vw;
     line-height: 1.7;
     font-family: "minecraftfont";
 }
 #minecraft-titlecard>h2{
-    color:rgb(177, 177, 177);
-    mix-blend-mode: normal;
+    color:white;
+    mix-blend-mode: difference;
     position: relative;
     font-size:2vw;
 }
@@ -553,17 +552,23 @@ nav{
     width: 100%;
 }
 #taboo-titlecard>h1{
-    color:rgba(244,132,181,255);
-    mix-blend-mode: difference;
+    color:#f28bb8;
+    mix-blend-mode: normal;
+    filter: blur(0.05vw);
+    position: relative;
     font-size: 21vw;
     margin-top: 0vw;
     margin-bottom: -4vw;
     line-height: 1.3;
     font-family: "taboofont";
 }
+#taboo-13{
+    font-family: "tabooshadowfont";
+}
 #taboo-titlecard>h2{
-    color:white;
-    mix-blend-mode: difference;
+    color:#afafaf;
+    mix-blend-mode: normal;
+    position: relative;
     font-size:2vw;
 }
 #taboo-article{

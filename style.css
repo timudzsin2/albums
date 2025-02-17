@@ -105,10 +105,15 @@ nav{
 #blonde-article{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+#blonde-article>img{
+    width:100%;
+    aspect-ratio: 1 / 1;
 }
 #blonde-article-article{
     background-color: white;
-
+    overflow: hidden;
     background-image: url(kepek/blonde-7.png);
     background-size: 70%;   
     background-repeat: no-repeat;
@@ -128,7 +133,6 @@ nav{
     font-style: italic;
     font-size: 2.5vw;
     margin-top: 0.3vw;
-    filter: blur(0.03vw);
 }
 #blonde-mydesc{
     font-family: "helveticafont";
@@ -144,17 +148,15 @@ nav{
     font-style: italic;
     font-size: 3vw;
     margin-top: 0.3vw;
-    filter: blur(0.03vw);
 }
 #ivy-2{
     color: black;
     font-family: "helveticaboldfont";
     font-style: italic;
-    font-size: 1.5vw;
-    margin-top: 7.5vw;
-    margin-left: 0vw;
-    margin-right: 20vw;
-    filter: blur(0.03vw);
+    font-size: 0.8vw;
+    margin-top: 8.5vw;
+    margin-left: 3vw;
+    margin-right: 19vw;
     text-align: right;
 }
 #blonde-article-article-top-right{
@@ -170,6 +172,10 @@ nav{
     margin-top: 1.5vw;
     margin-right: 5vw;
     font-size: 0.9vw;
+}
+#blonde-article-article-bottom *{
+    text-decoration: none;
+    color: black;
 }
 #boys-dont-cry-container{
     position: relative;
@@ -286,12 +292,15 @@ nav{
     padding-top: 1vw;
 }
 #trench-fav { padding-top: 7vw; }
-#trench-fav h1, #trench-fav li{
+#trench-fav h1, #trench-fav ul *{
     color: rgb(122, 122, 122);
     text-align: center;
-    filter: blur(0.05vw);
     font-family: "trenchfont";
     font-size: 2vw;
+    text-decoration: none;
+}
+#trench-fav h1, #trench-fav a{
+    filter: blur(0.05vw);
 }
 
 
@@ -336,7 +345,7 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: hidden;
-    background-image: url(kepek/iammusic-2.png);
+    background-image: url(kepek/blonde-6.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -353,33 +362,34 @@ nav{
     width:100%;
 }   
 #iammusic-article-article-favorite *{
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-align: right;
     color: white;
+    text-decoration: none;
 }
 #iammusic-article-article-favorite{
     height: 100%;
     width: 100%
 }
 #iammusic-article-article-favorite h1{
-    margin-top: 70%;
+    margin-top: 55%;
 }
 #iammusic-article-article-p{
-    font-size: 1vw;
+    font-size: 1.1vw;
     text-align: left;
     margin-top: 0.1vw;
-    margin-right: 8vw;
+    margin-right: 6.5vw;
     margin-left: 0.1vw;
     width: auto;
     color: white;
 }
 #iammusic-article-article-3words *{
-    font-size: 2.6vw;
+    font-size: 2.9vw;
     font-family: "iammusicfont";
     color: white;
 }
 #iammusic-article-article-3words{
-    padding-top: 3.5vw;
+    padding-top: 3.8vw;
     padding-bottom: auto;
 }
 
@@ -422,11 +432,91 @@ nav{
 }
 #hithisisflume-article-article{
     background-color: back;
+    display: grid;
+    grid-template-columns: 7fr 9fr;
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
-#hithisisflume-article-article *{
-    font-size: 4.5vw;
+#hithisisflume-article-article-left{
+    background-color: pink;
+}
+#flume-article-article-left-top{
+    height: 11vw;
+    background-color: #a38c02;
+    background-image: url(kepek/hithisisflume-4.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: 5vw;
+}
+#flume-article-article-left-top>img{
+    width: 100%;
+    height: auto;
+    margin-top: 5vw;
+}
+#hithisisflume-article-article-right{
+    background-color: #f36722;
+    overflow: hidden;
+    background-image: url(kepek/hithisisflume-5.png);
+    background-repeat: no-repeat;
+    background-position: top 0vw right 0;
+    background-size: 5vw;
+}
+#hithisisflume-article-article-right>ol{
+    margin-left: 3.5vw;
+    margin-top: 1vw;
+    background-image: url(kepek/hithisisflume-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom 3vw right 0vw;
+    background-size: 14vw;
+}
+#flume-article-article-left-middle{
+    height: 12vw;
+    background-image: url(kepek/hithisisflume-7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 102%;
+}
+#flume-article-article-left-middle>img{
+    width: 5vw;
+}
+#flume-article-article-left-bottom{
+    background-color: #1a768b;
+    height: calc(100% - 11vw - 12vw);
+    background-image: url(kepek/hithisisflume-3.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0vw right 0;
+    background-size: 5vw;
+    padding: 0.5vw;
+}
+#flume-article-article-left-bottom>p{
     color: white;
+    font-size: 2.8vw;
+    font-family: 'Palatino Linotype', 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
 }
+#flume-p2{
+    color: #d283b7 !important;
+    font-size: 1.5vw !important;
+    font-family: "flumefont", 'Playfair Display', serif !important;
+    font-style: normal !important;
+    margin-top: 0.8vw;
+}
+#hithisisflume-article-article-right>ol>li{
+    margin-top: 0.4vw;
+    margin-bottom: 0.4vw;
+}
+#hithisisflume-article-article-right>ol *{
+    font-size: 1.8vw;
+    font-family: 'Georgia';
+    color: #063bb4;
+    text-decoration: none;
+}
+.flume-tracklist-fav, .flume-tracklist-fav *{
+    color: white !important;
+}
+
 
 
 
@@ -468,7 +558,10 @@ nav{
     grid-template-columns: 1fr 1fr;
 }
 #astroworld-article-article{
-    background-color: black;
+    background-image: url(kepek/astroworld-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 

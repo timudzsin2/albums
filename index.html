@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timu Albumjai</title>
+    <title>Timu's Albums</title>
     <link rel="icon" href="kepek/vinyl.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Crimson+Text&family=Vollkorn&family=Playfair+Display&family=Lora&family=Merriweather&family=Libre+Baskerville&family=Domine&family=Prata&family=Suranna&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -53,7 +53,7 @@
                     <img src="kepek/blonde-3.png" alt="">
                 </div>
             </div>
-            <p id="blonde-article-article-bottom">favorite songs: Nikes, White Ferrari, Futura Free</p>
+            <p id="blonde-article-article-bottom">favorite songs: <a href="https://www.youtube.com/watch?v=diIFhc_Kzng">Nikes</a>, <a href="https://www.youtube.com/watch?v=Dlz_XHeUUis">White Ferrari</a>, <a href="https://www.youtube.com/watch?v=VHGqsnsuA3c">Futura Free</a></p>
             <div id="boys-dont-cry-container">
                 <img id="boys-dont-cry" src="kepek/blonde-5.png" alt="">
             </div>
@@ -106,9 +106,9 @@
                             <div id="trench-fav">
                                 <h1>Favorite songs</h1>
                                 <ul>
-                                    <li>Morph</li>
-                                    <li>Neon Gravestones</li>
-                                    <li>Bandito</li>
+                                    <li><a href="https://www.youtube.com/watch?v=OmL9TqTFIAc">Morph</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=5MeQ9rA2Ifg">Neon Gravestones</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=VQHTROo0S8E">Bandito</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
             <div><img src="kepek/iammusic-3t.png" alt=""></div>
             <div><img src="kepek/iammusic-5t.png" alt=""></div>
             <div><img src="kepek/iammusic-4t.png" alt=""></div>
-            <div><img src="kepek/iammusic-7t.png" alt=""></div>
+            <div><img src="kepek/iammusic-9t.png" alt=""></div>
             <div><img src="kepek/iammusic-8t.png" alt=""></div>
             <ul id="iammusic-article-article-3words">
                 <li>NARCISSISTIC</li>
@@ -173,14 +173,33 @@
             <div id="iammusic-article-article-favorite">
                 <h1>Favorite songs</h1>
                 <ul>
-                    <li>2024</li>
-                    <li>EVILJ0RDAN</li>
-                    <li>H00DBYAIR</li>
+                    <li><a href="https://www.youtube.com/watch?v=YG3EhWlBaoI">2024</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=LWEpqhgUEpg">EVILJ0RDAN</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=D8iTxZEg7ro">H00DBYAIR</a></li>
                 </ul>
             </div>
             <p id="iammusic-article-article-p">Playboi Carti rarely releases music, it's as if he does it on purpose, making it special when his music drops. He promised that I AM MUSIC would be released in 2024, but that didn't happen.</p>
         </div>
         <script>
+            //article random háttere
+            // Array of image URLs
+            const images = [
+                'kepek/iammusic-2.png',  // Replace with actual image paths
+                'kepek/iammusic-7.png',
+                'kepek/iammusic-10.png'
+            ];
+
+            // Select a random image
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+
+            // Apply it as the background image
+            document.getElementById('iammusic-article-article').style.backgroundImage = `url(${randomImage})`;
+
+
+
+
+
+            //div-ek random keverése
             function shuffleItems() {
               let container = document.getElementById("iammusic-article-article");
               let items = Array.from(container.children); // Convert NodeList to Array
@@ -229,17 +248,39 @@
     <div id="hithisisflume-article">
         <img src="kepek/hithisisflume.png" alt="Hi This Is Flume album cover">
         <div id="hithisisflume-article-article">
-          <h1 style="font-family: 'Impact', sans-serif; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Comic Sans MS', cursive; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Courier New', monospace; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Trebuchet MS', sans-serif; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Brush Script MT', cursive; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Franklin Gothic Medium', sans-serif; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Times New Roman', serif; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Verdana', sans-serif; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Lucida Console', monospace; font-style: italic;">Hi This Is Flume</h1>
-          <h1 style="font-family: 'Gadget', sans-serif; font-style: italic;">Hi This Is Flume</h1>
-                    
+            <div id="hithisisflume-article-article-left">
+                <div id="flume-article-article-left-top">
+                    <img src="kepek/hithisisflume-6.png" alt="">
+                </div>
+                <div id="flume-article-article-left-middle">
+                    <img src="kepek/hithisisflume-2.png" alt="">
+                </div>
+                <div id="flume-article-article-left-bottom">
+                    <p>Every song on Hi This is Flume transitions into the next one.</p>
+                    <p id="flume-p2">Flume also made a 43 minute visualizer for his album. Which you can see with 17 timestamped links on the right side.</p>
+                </div>
+            </div>
+            <div id="hithisisflume-article-article-right">
+                <ol>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=U19PymUiXySABNPp&t=0">Hi This is Flume</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=U19PymUiXySABNPp&t=29">Ecdysis</a></li>
+                    <li class="flume-tracklist-fav"><a href="https://youtu.be/7TML_MTQdg4?si=wEs0TvkEo-vesm4O&t=133">High Beams</a></li>
+                    <li class="flume-tracklist-fav"><a href="https://youtu.be/7TML_MTQdg4?si=ov7mpbUyVD6H5cMj&t=337">Jewel</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=iGaHUUMYlVWz2IIc&t=531">╜φ°⌂▌╫§╜φ°⌂▌╫§╜φ°⌂ ▌╫§╜φ°⌂▌╫§╜φ°⌂▌╫§╜ φ°⌂▌╫§╜φ°⌂▌╫§╜φ°⌂▌ ╫§╜φ°⌂▌╫§╜φ°⌂▌╫§╜φ °⌂▌╫§╜φ°⌂▌╫§╜φ°⌂▌╫ §╜φ°⌂▌╫§╜φ°⌂▌╫§╜φ° ⌂▌╫§╜φ°⌂▌</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=O8Xicb8n0r8wme4J&t=564">Dreamtime</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=ZD7QAG1wTRJjryW5&t=699">Is It Cold in the Water?</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=V-ItYW9KZwSj64I9&t=986">How to Build a Relationship</a></li>
+                    <li class="flume-tracklist-fav"><a href="https://youtu.be/7TML_MTQdg4?si=ryqny2LleGQxn4QP&t=1418">Wormhole</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=XcGnQV-x-kwem7X-&t=1561">Voices</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=lt1Ljfh-rr3d0goI&t=1675">MUD</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=Zno69ETlpdSIzcwh&t=1764">Upgrade</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=dHzFR6WaWIbxj_f7&t=1871">71m3</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=qgDfk7R8tv1fuApV&t=1951">Vitality</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=hRmLCZc9eG5gpIk1&t=2050">Daze 22.00</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=waqU2F2-_c1He2Tj&t=2186">Amber</a></li>
+                    <li><a href="https://youtu.be/7TML_MTQdg4?si=ljbR9fw3XgBb7kPu&t=2330">Spring</a></li>
+                </ol>
+          </div>
 
 
         </div>
@@ -273,7 +314,7 @@
     <div id="astroworld-article">
         <img src="kepek/astroworld.png" alt="astroworld album cover">
         <div id="astroworld-article-article">
-            <p>itt van szoveg az a astroworld</p>
+            
         </div>
     </div><div class="divider"></div>
     <div id="heartbreak-titlecard">

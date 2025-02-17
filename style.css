@@ -126,16 +126,35 @@ nav{
 #blonde-article-article-top-left>h1{
     font-family: "helveticaboldfont";
     font-style: italic;
-    font-size: 1.9vw;
+    font-size: 2.5vw;
     margin-top: 0.3vw;
-    filter: blur(0.5px);
+    filter: blur(0.03vw);
 }
-#blonde-article-article-top-left>p{
+#blonde-mydesc{
     font-family: "helveticafont";
     font-size: 1.5vw;
     margin-top: 2.3vw;
     margin-left: 8vw;
     margin-right: 0.3vw;
+    text-align: right;
+}
+#ivy-1{
+    color: #f2b938;
+    font-family: "helveticaboldfont";
+    font-style: italic;
+    font-size: 3vw;
+    margin-top: 0.3vw;
+    filter: blur(0.03vw);
+}
+#ivy-2{
+    color: black;
+    font-family: "helveticaboldfont";
+    font-style: italic;
+    font-size: 1.5vw;
+    margin-top: 7.5vw;
+    margin-left: 0vw;
+    margin-right: 20vw;
+    filter: blur(0.03vw);
     text-align: right;
 }
 #blonde-article-article-top-right{
@@ -267,7 +286,7 @@ nav{
     padding-top: 1vw;
 }
 #trench-fav { padding-top: 7vw; }
-#trench-fav *{
+#trench-fav h1, #trench-fav li{
     color: rgb(122, 122, 122);
     text-align: center;
     filter: blur(0.05vw);

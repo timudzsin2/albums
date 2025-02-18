@@ -410,7 +410,7 @@ nav{
     width: 100%;
 }
 #hithisisflume-titlecard>h1{
-    color:#d5ffcd;
+    color:#f36722;
     mix-blend-mode: normal;
     position: relative;
     font-size: 10vw;
@@ -421,7 +421,7 @@ nav{
     font-style: italic;
 }
 #hithisisflume-titlecard>h2{
-    color:rgb(237, 237, 237);
+    color:#898989;
     mix-blend-mode: normal;
     position: relative;
     font-size:2vw;
@@ -562,6 +562,9 @@ nav{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+}
+#astroworld-article-article-top{
+    height: 70%;
 }
 
 

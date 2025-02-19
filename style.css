@@ -70,6 +70,44 @@ nav{
 }
 
 
+.sound-container{
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    margin-top: 15vw;
+}
+/* Base styles */
+.sound-button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+/* Playing */
+.sound-button.playing {
+    background-image: url(kepek/playing.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+/* Hover when not playing */
+.sound-button.not-playing:hover {
+    background-image: url(kepek/play.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+/* Hover when playing */
+.sound-button.playing:hover {
+    background-image: url(kepek/pause.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+
+
 
 
 
@@ -107,9 +145,11 @@ nav{
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
 }
-#blonde-article>img{
+#blonde-cover{
     width:100%;
     aspect-ratio: 1 / 1;
+    background-image: url(kepek/blonde.png);
+    background-size: contain;
 }
 #blonde-article-article{
     background-color: white;
@@ -225,8 +265,15 @@ nav{
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
+#trench-cover{
+    background-image: url(kepek/trench.png);
+    width:100%;
+    aspect-ratio: 1 / 1;
+    background-size: contain;
+}
 #trench-article-article{
-    background-color: black;;
+    background-color: black;
+    filter: blur(0.04vw);
 }
 
 .trench-parallax-container {
@@ -242,7 +289,7 @@ nav{
     left: 0;
     width: 100%;
     height: 168%; /* Larger to allow movement */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('kepek/trench-5.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1.0)), url('kepek/trench-11.png');
     background-size: cover;
     background-position: center;
     transform: translateY(0); /* Start at normal position */
@@ -264,12 +311,10 @@ nav{
     font-family: "trenchfont";
     font-size: 2.0vw;
     color: rgb(256, 242, 2);
-    filter: blur(0.05vw);
 }
 #trench-tape{
     width: 100%;
     height: auto;
-    filter: blur(0.05vw);
  }
 #trench-below-tape{
     height:100%;
@@ -278,30 +323,31 @@ nav{
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
+#pilots{
+    margin-top: 9.5vw;
+    mix-blend-mode: difference;
+}
 #trench-below-tape p{
     font-size: 2vw;
     font-family: "trenchfont";
     color: white;
     text-align: center;
-    filter: blur(0.05vw);
 }
 #top-logos{
-    filter: blur(0.05vw);
     width:100%;
     height: auto;
     padding-top: 1vw;
 }
 #trench-fav { padding-top: 7vw; }
 #trench-fav h1, #trench-fav ul *{
-    color: rgb(122, 122, 122);
+    color: #716a52;
+    mix-blend-mode: difference;
     text-align: center;
     font-family: "trenchfont";
     font-size: 2vw;
     text-decoration: none;
 }
-#trench-fav h1, #trench-fav a{
-    filter: blur(0.05vw);
-}
+
 
 
 
@@ -335,6 +381,12 @@ nav{
 #iammusic-article{
     display:grid;
     grid-template-columns: 1fr 1fr;
+}
+#iammusic-cover{
+    width:100%;
+    aspect-ratio: 1 / 1;
+    background-image: url(kepek/iammusic.png);
+    background-size: contain;
 }
 #iammusic-article-article{
     background-color: black;
@@ -430,6 +482,12 @@ nav{
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
+#flume-cover{
+    width:100%;
+    aspect-ratio: 1 / 1;
+    background-image: url(kepek/hithisisflume.png);
+    background-size: contain;
+}
 #hithisisflume-article-article{
     background-color: back;
     display: grid;
@@ -522,7 +580,7 @@ nav{
 
 
 
-
+/*
 #astroworld-titlecard{
     height:30vw;
     text-align: center;
@@ -557,6 +615,12 @@ nav{
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
+#astroworld-cover{
+    background-image: url(kepek/astroworld.png);
+    width:100%;
+    aspect-ratio: 1 / 1;
+    background-size: contain;
+}
 #astroworld-article-article{
     background-image: url(kepek/astroworld-1.png);
     background-repeat: no-repeat;
@@ -566,7 +630,7 @@ nav{
 #astroworld-article-article-top{
     height: 70%;
 }
-
+*/
 
 
 
@@ -604,6 +668,12 @@ nav{
 #heartbreak-article{
     display:grid;
     grid-template-columns: 1fr 1fr;
+}
+#heartbreak-cover{
+    background-image: url(kepek/808s&heartbreak.png);
+    width:100%;
+    aspect-ratio: 1 / 1;
+    background-size: contain;
 }
 #heartbreak-article-article{
     background-color: rgb(0, 0, 0);
@@ -644,6 +714,12 @@ nav{
 #minecraft-article{
     display:grid;
     grid-template-columns: 1fr 1fr;
+}
+#minecraft-cover{
+    background-image: url(kepek/minecraft-volumealpha.png);
+    width:100%;
+    aspect-ratio: 1 / 1;
+    background-size: contain;
 }
 #minecraft-article-article{
     background-color: rgb(0, 0, 0);
@@ -694,10 +770,9 @@ nav{
 #taboo-article-article{
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: black;
-    transition: background-color 0.6s ease-out;
+    background-color: #030303;
+    transition: background-color 0.8s ease-in-out;
 }
-
 
 .taboo-carousel {
     position: relative;
@@ -705,20 +780,30 @@ nav{
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
+.taboo-carousel>.sound-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    z-index: 10;
+}
+.taboo-carousel>.sound-container>.sound-button{
+    position: absolute; /* or absolute, fixed, sticky */
+    z-index: 9; /* Higher value = appears on top */
+}
 .taboo-carousel-container {
     display: flex;
     width: 300%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.7s ease-in-out;
 }
 .taboo-carousel-image {
-/*     height: 49.43vw;
-*/  
     height: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
-#taboo-article button {
+.taboo-prev, .taboo-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

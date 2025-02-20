@@ -86,21 +86,24 @@ nav{
 }
 /* Playing */
 .sound-button.playing {
-    background-image: url(kepek/playing.png);
+    background-image: url(kepek/playing-white.png);
+    mix-blend-mode: difference;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
 }
 /* Hover when not playing */
 .sound-button.not-playing:hover {
-    background-image: url(kepek/play.png);
+    background-image: url(kepek/play-white.png);
+    mix-blend-mode: difference;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
 }
 /* Hover when playing */
 .sound-button.playing:hover {
-    background-image: url(kepek/pause.png);
+    background-image: url(kepek/pause-white.png);
+    mix-blend-mode: difference;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
@@ -866,8 +869,38 @@ nav{
     background-size: contain;
 }
 #minecraft-article-article{
-    background-color: rgb(0, 0, 0);
+    background-color: white;
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
+#minecraft-top{
+    background-color: rgba(255, 0, 0, 0.507);
+    height: 60%;
+}
+#minecraft-bottom{
+    background-color: rgba(0, 0, 255, 0.438);
+    height: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.stone-block{
+    background-image: url(kepek/minecraft-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+.diamond-block{
+    background-image: url(kepek/minecraft-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+
 
 
 
@@ -931,6 +964,7 @@ nav{
     transform: translate(-50%, -50%);
     margin: 0px;
     z-index: 10;
+    mix-blend-mode: difference;
 }
 .taboo-carousel>.sound-container>.sound-button{
     position: absolute; /* or absolute, fixed, sticky */

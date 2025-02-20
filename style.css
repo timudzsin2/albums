@@ -152,6 +152,89 @@ nav{
     background-size: contain;
 }
 #blonde-article-article{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    overflow: hidden;
+    background-image: url(kepek/blonde-2.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center top 13vw;
+}
+#blonde-article a, #blonde-article p, #blonde-favs{
+    text-decoration: none !important;
+    color: black;
+}
+#blonde-top{
+    height: 44vw;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1fr;
+    overflow: hidden;
+}
+#blonde-top-middle{
+    padding-top: 1vw;
+}
+#blonde-top-left{
+/*     background-color: rgba(255, 0, 0, 0.267)
+ */}
+#blonde-top-left>h1{
+    text-align: right;
+    font-family: "helveticaboldfont";
+    font-style: italic;
+    font-size: 2.7vw;
+    margin: 0.5vw;
+    margin-top: 1vw;
+}
+#blonde-top-right{
+/*     background-color: rgba(0, 128, 0, 0.233)
+ */}
+#ivy-1{
+    color: #f2b938;
+    font-family: "helveticaboldfont";
+    font-style: italic;
+    font-size: 1.7vw;
+    margin: 0.5vw;
+    margin-top: 1vw;
+}
+#ivy-2{
+    color: #f2b938;
+    font-family: "helveticaboldfont";
+    font-style: italic;
+    font-size: 2vw;
+    margin: 0.5vw;
+    margin-top: 2vw;
+}
+#blonde-bottom{
+/*     background-color: rgba(0, 0, 255, 0.192);
+ */    height: 6vw;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1.4fr;
+    text-align: center;
+}
+#blonde-bottom>*{
+    width: 100%;
+    height: auto;
+}
+#blonde-globe{
+    height: 5vw;
+    width: auto;
+    margin: auto;
+    margin-top: 0vw;
+}
+#blonde-mydesc{
+    text-align: right;
+    font-family: "helveticafont";
+    font-size: 1.1vw;
+    padding-right: 0.5vw;
+}
+#blonde-favs{
+    text-align: left;
+    font-family: "helveticafont";
+    font-size: 1.3vw;
+}
+
+/*                                  blonde article eredeti design
+#blonde-article-article{
     background-color: white;
     overflow: hidden;
     background-image: url(kepek/blonde-7.png);
@@ -227,7 +310,7 @@ nav{
     top: -6vw;
     left: 13vw;
 }
-
+*/
 
 
 

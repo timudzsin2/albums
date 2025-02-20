@@ -113,7 +113,7 @@
                     <img id="trench-tape" src="kepek/trench-9.png" alt="">
                     <div id="trench-below-tape">
                         <div>
-                            <img id="pilots" src="kepek/trench-12.png" alt="">
+                            <img id="pilots" src="kepek/trench-12t.png" alt="">
                         </div>
                         <div>
                             <p>The best twenty one pilots album.</p>
@@ -572,10 +572,11 @@
                     button.classList.add('playing');
                 } else {
                     audio.pause();
-                    audio.currentTime = 0; // Reset audio
+                    audio.currentTime = 0;
                     button.classList.remove('playing');
                     button.classList.add('not-playing');
                 }
+                // ha vége a hangfilenak, automatikusan átállnak "not-playing" fázisra
                 audio.addEventListener('ended', () => {
                     button.classList.remove('playing');
                     button.classList.add('not-playing');

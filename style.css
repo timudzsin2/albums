@@ -878,6 +878,10 @@ nav{
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
+#minecraft-article-article *{
+    font-family: "minecraftfont";
+    color: white;
+}
 #minecraft-top{
     background-color: rgba(255, 0, 0, 0.397);
     height: 60%;
@@ -885,12 +889,64 @@ nav{
     grid-template-rows: 1fr 2fr;
 }
 #minecraft-top-grass{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(kepek/minecraft-5.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(kepek/minecraft-5.png);
     background-size: 20%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    overflow: hidden;
+}
+#minecraft-top-grass img{
+    image-rendering: pixelated;
+}
+#minecraft-top-grass>h1{
+    font-size: 2.1vw;
+    margin: 0.5vw;
+    margin-top: 3vw;
+    text-align: center;
 }
 #minecraft-top-dirt{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(kepek/minecraft-4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(kepek/minecraft-4.png);
     background-size: 20%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+}
+#minecraft-top-dirt-top{
+    overflow: hidden;
+}
+#minecraft-top-dirt-top img{
+    height: 8vw;
+    width: auto;
+    float: left;
+    margin: 0.8vw;
+    box-shadow: 0.5vw 0.5vw 0vw rgba(0, 0, 0, 0.7); /* Horizontal offset, vertical offset, blur radius, shadow color */
+}
+#minecraft-top-dirt-top p{
+    margin-top: 1.5vw;
+    font-size: 1.6vw;
+}
+#minecraft-top-dirt-bottom{
+    overflow: hidden;
+}
+#minecraft-top-dirt-bottom img{
+    height: 8vw;
+    width: auto;
+    float: right;
+    margin: 0.8vw;
+    box-shadow: 0.5vw 0.5vw 0vw rgba(0, 0, 0, 0.7); /* Horizontal offset, vertical offset, blur radius, shadow color */
+}
+#minecraft-top-dirt-bottom p{
+    text-align: right;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+}
+#minecraft-favs {
+    text-align: center !important;
+    line-height: 2vw;
+    mix-blend-mode: difference;
+}
+#minecraft-favs a{
+    text-decoration: none;
 }
 #minecraft-bottom{
     background-image: url(kepek/minecraft-3.png);

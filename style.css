@@ -188,7 +188,7 @@ nav{
     margin-top: 0.5vw;
 }
 #ivy-2{
-    color: #f2b938;
+    color: #850073;
     font-family: "helveticaboldfont";
     font-style: italic;
     font-size: 1.7vw;
@@ -196,15 +196,15 @@ nav{
 }
 #blonde-mydesc{
     font-family: "helveticafont";
-    font-size: 1.15vw;
+    font-size: 1.1vw;
     margin-top: 0.5vw;
 }
 #blonde-image-container{
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
-    gap: 0.8vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
+    gap: 0.5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
 }
 #blonde-image-container>div{
     display: grid;
@@ -480,12 +480,16 @@ nav{
     color: white;
     text-align: center;
 }
+#trench-lore{
+    font-size: 1.0vw !important;
+    margin-top: 1vw;
+}
 #top-logos{
     width:100%;
     height: auto;
     padding-top: 1vw;
 }
-#trench-fav { padding-top: 7vw; }
+#trench-fav { padding-top: 5vw; }
 #trench-fav h1, #trench-fav ul *{
     color: #716a52;
     mix-blend-mode: difference;
@@ -577,7 +581,7 @@ nav{
     font-size: 1.1vw;
     text-align: left;
     margin-top: 0.1vw;
-    margin-right: 6.5vw;
+    margin-right: 5.5vw;
     margin-left: 0.1vw;
     width: auto;
     color: white;
@@ -872,13 +876,27 @@ nav{
     background-color: white;
     width: 100%;
     aspect-ratio: 1 / 1;
+    overflow: hidden;
 }
 #minecraft-top{
-    background-color: rgba(255, 0, 0, 0.507);
+    background-color: rgba(255, 0, 0, 0.397);
     height: 60%;
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+}
+#minecraft-top-grass{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(kepek/minecraft-5.png);
+    background-size: 20%;
+}
+#minecraft-top-dirt{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(kepek/minecraft-4.png);
+    background-size: 20%;
 }
 #minecraft-bottom{
-    background-color: rgba(0, 0, 255, 0.438);
+    background-image: url(kepek/minecraft-3.png);
+    background-size: 20%;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     height: 40%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -890,6 +908,9 @@ nav{
     background-size: 100%;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
 }
 .diamond-block{
     background-image: url(kepek/minecraft-2.png);
@@ -898,6 +919,9 @@ nav{
     background-size: 100%;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
 }
 
 
@@ -991,7 +1015,7 @@ nav{
     border: none;
     padding: 1vw;
     cursor: pointer;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .taboo-prev {
     left: 1vw;

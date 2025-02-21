@@ -57,10 +57,11 @@
             </div>
             <div id="blonde-bottom">
                 <p id="ivy-2">"You ain't a kid no more, we'll never be those kids again"</p>
-                <p id="blonde-mydesc">My favorite album. Every year, I return to it for a few months. The album is truly timeless.</p>
+                <p id="blonde-mydesc">My favorite album. Every year, I return to it for a few months. A truly timeless album with introspective storytelling. Frank Ocean pulled off a masterful stunt by first releasing Endless, a visual album that fulfilled his Def Jam contract, only to drop Blonde independently the very next day—maximizing his creative control and financial gain while stunning the music industry.</p>
                 <div id="blonde-image-container">
                     <div></div>
                     <div><img src="kepek/blonde-3.png" alt=""></div>
+                    <div><img src="kepek/blonde-9.png" alt=""></div>
                     <div><img src="kepek/blonde-8.png" alt=""></div>
                     <div><img src="kepek/blonde-5.png" alt=""></div>
                     <div><img src="kepek/blonde-7.png" alt=""></div>
@@ -170,6 +171,7 @@
                         </div>
                         <div>
                             <p>The best twenty one pilots album.</p>
+                            <p id="trench-lore">With lore that is too complex to explain.</p>
                             <img id="top-logos" src="kepek/trench-7.png" alt="">
                             <div id="trench-fav">
                                 <h1>Favorite songs</h1>
@@ -253,7 +255,7 @@
                     <li><a href="https://www.youtube.com/watch?v=D8iTxZEg7ro">H00DBYAIR</a></li>
                 </ul>
             </div>
-            <p id="iammusic-article-article-p">Playboi Carti rarely releases music, it's as if he does it on purpose, making it special when his music drops. He promised that I AM MUSIC would be released in 2024, but that didn't happen.</p>
+            <p id="iammusic-article-article-p">Playboi Carti rarely releases music, it's as if he does it on purpose, making it special when his music drops. He promised that I AM MUSIC would be released in 2024, but that didn't happen. Carti's strong influence started with Whole Lotta Red, and with creating Opium.</p>
         </div>
         <script>
             //article random háttere
@@ -492,7 +494,8 @@
         </div>
         <div id="minecraft-article-article">
             <div id="minecraft-top">
-
+                <div id="minecraft-top-grass"></div>
+                <div id="minecraft-top-dirt"></div>
             </div>
             <div id="minecraft-bottom">
                 <div class="stone-block"></div>
@@ -506,6 +509,41 @@
                 <div class="diamond-block"></div>
                 <div class="diamond-block"></div>
             </div>
+
+            <script>
+                document.querySelectorAll("#minecraft-bottom div").forEach(block => {
+                let clicks = 0; // Track clicks per block
+
+                block.addEventListener("click", function () {
+                    clicks++;
+
+                    // Change appearance based on clicks
+                    if (clicks === 1) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_0.png" alt="Stage 0">`;
+                    } else if (clicks === 2) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_1.png" alt="Stage 1">`;
+                    } else if (clicks === 3) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_2.png" alt="Stage 2">`;
+                    } else if (clicks === 4) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_3.png" alt="Stage 3">`;
+                    } else if (clicks === 5) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_4.png" alt="Stage 4">`;
+                    } else if (clicks === 6) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_5.png" alt="Stage 5">`;
+                    } else if (clicks === 7) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_6.png" alt="Stage 6">`;
+                    } else if (clicks === 8) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_7.png" alt="Stage 7">`;
+                    } else if (clicks === 9) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_8.png" alt="Stage 8">`;
+                    } else if (clicks === 10) {
+                        this.innerHTML = `<img src="kepek/destroy_stage_9.png" alt="Stage 9">`;
+                    } else if (clicks > 10) {
+                        this.style.visibility = "hidden"; // Hide block after 10 clicks
+                    }
+                });
+            });
+            </script>
         </div>
     </div>
     <div class="divider"></div>
@@ -539,7 +577,7 @@
     <div id="taboo-article">
         <div class="taboo-carousel">
             <div class="sound-container">
-                <audio id="taboo-audio" src="songs/bmt_cut.mp3"></audio>
+                <audio id="taboo-audio" src="songs/vengeance_cut.mp3"></audio>
                 <button class="taboo-sound-button sound-button not-playing" data-audio="taboo-audio"></button>
             </div>
             <div class="taboo-carousel-container">
@@ -608,10 +646,10 @@
                     soundButton.classList.add('not-playing');
 
                     if(index === 2) {
-                        audioElement.src = "songs/bmt_cut.mp3";
+                        audioElement.src = "songs/vengeance_cut.mp3";
                         audioElement.load(); // Reload the new source
                     } else if(index === 1) {
-                        audioElement.src = "songs/clout_cobain_cut.mp3";
+                        audioElement.src = "songs/switch_it_up_cut.mp3";
                         audioElement.load(); // Reload the new source
                     } else if(index === 0) {
                         audioElement.src = "songs/taboo_cut.mp3";

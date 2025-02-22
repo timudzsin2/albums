@@ -1257,3 +1257,38 @@ nav{
     background-size: 40%;
     background-repeat: no-repeat;
 }
+
+
+
+
+
+
+
+
+
+
+
+#pc-warning{
+    display: none;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+#pc-warning>h1{
+    font-size: 23vw;
+    color: white;
+    font-family:"iammusicfont";
+    text-align: center;
+}
+#pc-warning-mark{
+    color: red !important;
+}
+@media screen and (max-width: 1000px) {
+    * {
+        display: none !important;
+    }
+    #pc-warning, html, body, #pc-warning *{
+        display: block !important;
+    }
+}
+

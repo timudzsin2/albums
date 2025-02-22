@@ -1283,12 +1283,12 @@ nav{
 #pc-warning-mark{
     color: red !important;
 }
-@media screen and (max-width: 1000px) {
-    * {
-        display: none !important;
-    }
-    #pc-warning, html, body, #pc-warning *{
-        display: block !important;
-    }
+#pc-warning>button{
+    background-color: black;
+    border: none;
+    color: rgb(1, 1, 1);
+    font-size: 15vw;
+    cursor: pointer;
+    width:100%;
 }
 

@@ -255,7 +255,7 @@
                     <li><a href="https://www.youtube.com/watch?v=D8iTxZEg7ro">H00DBYAIR</a></li>
                 </ul>
             </div>
-            <p id="iammusic-article-article-p">Playboi Carti rarely releases music, it's as if he does it on purpose, making it special when his music drops. He promised that I AM MUSIC would be released in 2024, but that didn't happen. Carti's strong influence started with Whole Lotta Red, and with creating Opium.</p>
+            <p id="iammusic-article-article-p">Playboi Carti rarely releases music, it's as if he does it on purpose, making it special when his music drops. He promised that I AM MUSIC would be released in 2024, but that didn't happen. Carti's strong influence and unique sound started with Whole Lotta Red, and with creating Opium.</p>
         </div>
         <script>
             //article random háttere
@@ -603,8 +603,8 @@
                 <img src="kepek/taboo-2.png" class="taboo-carousel-image">
                 <img src="kepek/taboo.png" class="taboo-carousel-image">
             </div>
-            <button class="taboo-prev" data-audio="taboo-audio" onclick="prevSlide(); buttonCheck(); fadeBackground();">&#10094;</button>
-            <button class="taboo-next" data-audio="taboo-audio" onclick="nextSlide(); buttonCheck(); fadeBackground();">&#10095;</button>
+            <button class="taboo-prev" data-audio="taboo-audio" onclick="prevSlide(); buttonCheck(); fadeBackground(); changeContent();">&#10094;</button>
+            <button class="taboo-next" data-audio="taboo-audio" onclick="nextSlide(); buttonCheck(); fadeBackground(); changeContent();">&#10095;</button>
         </div>
 
         <script>
@@ -651,6 +651,7 @@
                 }
             }
 
+
             // a carousel gombok megállítják a zene lejátszást és kicserélik a zenét
             document.querySelectorAll('.taboo-next, .taboo-prev').forEach(button => {
                 const audio = document.getElementById(button.getAttribute('data-audio'));
@@ -678,8 +679,80 @@
         </script>
 
         <div id="taboo-article-article">
-
+            <div id="taboo-article-article-content">
+                <div id="taboo-act3">
+                    <h1>ACT 3: Dark</h1>
+                    <div id="taboo-act3-pbox">
+                        <img src="kepek/taboo-4.png" alt="">
+                        <p>TA13OO is a concept album divided into three acts—"Light," "Gray," and "Dark"—each exploring different themes.</p>
+                    </div>
+                    <div id="taboo-act3-tracks">
+                        <p><a href="https://www.youtube.com/watch?v=KSEyLU3Gx5w">10. The Blackest Balloon | The 13lackezt 13alloon</a></p>
+                        <p class="taboo-fav"><a href="https://www.youtube.com/watch?v=B7PS4gJe5Y4">11. Percs | Percz</a></p>
+                        <p class="taboo-fav"><a href="https://youtu.be/s0hMu9FUjmk?si=B5tFk_fJns0JO2ms">12. Vengeance | Vengeance</a></p>
+                        <p class="taboo-fav"><a href="https://www.youtube.com/watch?v=hMI86-muHzU">13. Black Metal Terrorist | 13 M T</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <script>
+            //article tartalmának cserélése a carousel gonbokkal, index-el megfelelően
+            const contentDiv = document.getElementById("taboo-article-article-content");
+
+            const contentArray = [
+                `<div id="taboo-act1">
+                    <div id="taboo-act1-tracks">
+                        <p><a href="https://www.youtube.com/watch?v=PlLLXchYuD4">1. Taboo | Ta13oo</a></p>
+                        <p><a href="https://www.youtube.com/watch?v=Hr2b5TG54fE">2. Black Balloons | 13lack 13alloonz</a></p>
+                        <p><a href="https://www.youtube.com/watch?v=bakfTMVx5GM">3. Cash Maniac | Cazh Man1ac</a></p>
+                        <p><a href="https://www.youtube.com/watch?v=-fL6hd9rc1Y">4. Sumo | Zumo</a></p>
+                    </div>
+                    <h1>ACT 1: Light</h1>
+                    <div id="taboo-act1-pbox">
+                        <img src="kepek/taboo-7.png" alt="">
+                        <p>Explores innocence, love, and trust while hinting at the pain and corruption that follow.</p>
+                        <p id="taboo-act1-bottom-p">One of the best rap albums of 2018, probably better than Astroworld.</p>
+                    </div>
+                </div>`,
+                `<div id="taboo-act2">
+                    <h1>ACT 2: Gray</h1>
+                    <div id="taboo-act2-tracks">
+                        <p><a href="https://www.youtube.com/watch?v=ZprcunL9eVQ">5. Super Saiyan Superman | Zuper Za1yan Zuperman</a></p>
+                        <p><a href="https://www.youtube.com/watch?v=6wPULzGRGnE">6. Switch It Up | Zw1tch 1t Up</a></p>
+                        <p><a href="https://www.youtube.com/watch?v=hbU9sdBGg_Y">7. Mad I Got It | Mad 1 Got 1t</a></p>
+                        <p><a href="https://www.youtube.com/watch?v=8TCrqTL5STg">8. Sirens | Z1renz</a></p>
+                        <p><a href="https://youtu.be/tKAv7eOK2dg?si=eyZhaIUmjY9oH20N">9. Clout Cobain | Clout Co13a1n</a></p>
+                    </div>
+                    <div id="taboo-act2-pbox">
+                        <img src="kepek/taboo-5.png" alt="">
+                        <p>serving as a transition between the lighter, more melodic tones of Light (Act 1) and the dark, aggressive energy of Dark (Act 3). This middle section represents moral ambiguity, internal conflict, and the blurred lines between fame, trauma, and personal struggles.</p>
+                    </div>
+                </div>`,
+                `<div id="taboo-act3">
+                    <h1>ACT 3: Dark</h1>
+                    <div id="taboo-act3-pbox">
+                        <img src="kepek/taboo-4.png" alt="">
+                        <p>TA13OO is a concept album divided into three acts—"Light," "Gray," and "Dark"—each exploring different themes.</p>
+                    </div>
+                    <div id="taboo-act3-tracks">
+                        <p><a href="https://www.youtube.com/watch?v=KSEyLU3Gx5w">10. The Blackest Balloon | The 13lackezt 13alloon</a></p>
+                        <p class="taboo-fav"><a href="https://www.youtube.com/watch?v=B7PS4gJe5Y4">11. Percs | Percz</a></p>
+                        <p class="taboo-fav"><a href="https://youtu.be/s0hMu9FUjmk?si=B5tFk_fJns0JO2ms">12. Vengeance | Vengeance</a></p>
+                        <p class="taboo-fav"><a href="https://www.youtube.com/watch?v=hMI86-muHzU">13. Black Metal Terrorist | 13 M T</a></p>
+                    </div>
+                </div>`
+            ];
+
+            function changeContent() {
+                contentDiv.classList.add("fade-out");
+                setTimeout(() => {
+                    // Update content after fade-out
+                    contentDiv.innerHTML = contentArray[index];
+                    contentDiv.classList.remove("fade-out");
+                }, 700); // ugyanannyi, mint a CSS-ben a .fade-out classnak
+            }
+        </script>
     </div>
     <div class="divider"></div>
     

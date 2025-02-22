@@ -1029,6 +1029,10 @@ nav{
     aspect-ratio: 1 / 1;
     background-color: #030303;
     transition: background-color 0.8s ease-in-out;
+    overflow: hidden;
+}
+#taboo-article-article *{
+    text-decoration: none;
 }
 
 .taboo-carousel {
@@ -1071,7 +1075,7 @@ nav{
     border: none;
     padding: 1vw;
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 .taboo-prev {
     left: 1vw;
@@ -1080,10 +1084,143 @@ nav{
     right: 1vw;
 }
 
+.fade-out {
+    opacity: 0;
+}
+#taboo-article-article-content{
+    transition: opacity 0.7s ease-in-out;
+    overflow: hidden;
+    height: 100%;
+}
 
+#taboo-act3{
+    padding: 1vw;
+    background-image: url(kepek/taboo-8.png);
+    background-size: cover;
+    height: 100%;
+}
+#taboo-act3 *{
+    color: white;
+    font-family: "taboofont";
+}
+#taboo-act3 h1{
+    text-align: center;
+    font-size: 9vw;
+}
+#taboo-act3-pbox{
+    padding-top: 1vw;
+}
+#taboo-act3-pbox img{
+    float: right;
+    width: 24vw;
+    height: auto;
+    border-radius: 2vw;
+    border: 0.3vw solid white;
+}
+#taboo-act3-pbox p{
+    font-size: 3vw;
+    text-align: right;
+    margin-right: 25vw;
+}
+#taboo-act3-tracks {
+    padding-top: 5vw;
+}
+#taboo-act3-tracks *{
+    font-size: 2.4vw;
+}
+.taboo-fav{
+    font-weight: bolder;
+    font-family: "tabooshadowfont" !important;
+    color: #A8A8A8 !important;
+}
+.taboo-fav *{
+    font-weight: bolder;
+    font-family: "tabooshadowfont" !important;
+    color: #A8A8A8 !important;
+}
 
+#taboo-act2{
+    padding: 1vw;
+    background-image: url(kepek/taboo-12.png);
+    background-size: cover;
+    height: 100%;
 
+}
+#taboo-act2 *{
+    color: black;
+    font-family: "taboofont";
+}
+#taboo-act2 h1{
+    text-align: center;
+    font-size: 9vw;
+}
+#taboo-act2-tracks {
+    padding-top: 0vw;
+    background-image: url(kepek/taboo-14.png);
+    background-size: 40%;
+    background-position: top 1vw right 0vw;
+    background-repeat: no-repeat
+}
+#taboo-act2-tracks *{
+    font-size: 2.4vw;
+}
+#taboo-act2-tracks p{
+    margin-top: 0.2vw;
+}
+#taboo-act2-pbox{
+    padding-top: 0vw;
+}
+#taboo-act2-pbox img{
+    margin-top: 0.5vw;
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
+    border: 0.3vw solid black;
+}
+#taboo-act2-pbox p{
+    margin-top: 0.5vw;
+    font-size: 1.3vw;
+    text-align: center;
+}
 
-
-
-
+#taboo-act1{
+    padding: 1vw;
+    height: 100%;
+    background-image: url(kepek/taboo-13.png);
+    background-size: 30%;
+    background-position: top 0vw left 36.5vw;
+    background-repeat: no-repeat;
+}
+#taboo-act1 *{
+    color: black;
+    font-family: "taboofont";
+}
+#taboo-act1 h1{
+    text-align: center;
+    font-size: 9vw;
+    margin-top: 2vw;
+}
+#taboo-act1-tracks *{
+    font-size: 2.4vw;
+}
+#taboo-act1-pbox img{
+    float: right;
+    width: 60%;
+    height: auto;
+    border-radius: 1vw;
+    border: 0.3vw solid black;
+}
+#taboo-act1-pbox p{
+    margin-top: 1vw;
+    font-size: 2.6vw;
+}
+#taboo-act1-bottom-p {
+    margin-top: 8vw !important;
+    font-size: 1vw !important;
+}
+#taboo-act1-pbox{
+    background-image: url(kepek/taboo-15.png) !important;
+    background-position: bottom -5vw right 0vw;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}

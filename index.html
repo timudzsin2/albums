@@ -752,6 +752,40 @@
                     contentDiv.classList.remove("fade-out");
                 }, 700); // ugyanannyi, mint a CSS-ben a .fade-out classnak
             }
+
+            //act 1 és act 2 article tartalmának előre betöltése, hogy az ne az article változtatáskor történjen
+            const imageUrls = [
+                "kepek/taboo-7.png",  // Image from #taboo-act1
+                "kepek/taboo-5.png",   // Image from #taboo-act2
+                "kepek/taboo-13.png",
+                "kepek/taboo-14.png",
+                "kepek/taboo-15.png"
+            ];
+
+            function preloadImages(urls, callback) {
+                let loadedCount = 0;
+                const totalImages = urls.length;
+
+                urls.forEach((url) => {
+                    const img = new Image();
+                    img.src = url;
+                    img.onload = () => {
+                        loadedCount++;
+                        console.log(loadedCount)
+                        console.log(img.src)
+                        if (loadedCount === totalImages) {
+                            callback(); // Run function once all images are loaded
+                        }
+                    };
+                });
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                preloadImages(imageUrls, () => {
+                    console.log("All images preloaded!");
+                    document.body.classList.add("images-loaded"); // You can use this to remove loading indicators
+                });
+            });
         </script>
     </div>
     <div class="divider"></div>

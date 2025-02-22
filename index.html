@@ -166,7 +166,7 @@
                     </div>
                     <img id="trench-tape" src="kepek/trench-9.png" alt="">
                     <div id="trench-below-tape">
-                        <div>
+                        <div id="trench-below-tape-left">
                             <img id="pilots" src="kepek/trench-12t.png" alt="">
                         </div>
                         <div>
@@ -454,7 +454,18 @@
             </div>
         </div>
         <div id="heartbreak-article-article">
-            <p>itt van szoveg az a astroworld</p>
+            <div id="heartbreak-left">
+                <img src="kepek/808s&heartbreak-1.png" alt="">
+                <p id="heartbreak-desc">This album is a big turn in Kanye's career. This was caused by the loss of his mother, and the end of his engagement. It ended up redefining hip-hop and influencing an entire generation of artists.</p>
+            </div>
+            <div>
+                <div id="heartbreak-favs">
+                    <p>Favorite songs:</p>
+                    <p><a href="https://www.youtube.com/watch?v=d9BMPmfxaoM">Say You Will</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=KaumK4b6DqQ">Amazing</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=ek_T6atbfe0">Love Lockdown</a></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="divider"></div>
@@ -750,10 +761,10 @@
                     // Update content after fade-out
                     contentDiv.innerHTML = contentArray[index];
                     contentDiv.classList.remove("fade-out");
-                }, 700); // ugyanannyi, mint a CSS-ben a .fade-out classnak
+                }, 800); // ugyanannyi, mint a CSS-ben a #taboo-article-article-content id-nek
             }
 
-            //act 1 és act 2 article tartalmának előre betöltése, hogy az ne az article változtatáskor történjen
+            //act 1 és act 2 article tartalmának előre betöltése, hogy az ne az article változtatáskor történjen, nem igazán működik
             const imageUrls = [
                 "kepek/taboo-7.png",  // Image from #taboo-act1
                 "kepek/taboo-5.png",   // Image from #taboo-act2

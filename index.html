@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Crimson+Text&family=Vollkorn&family=Playfair+Display&family=Lora&family=Merriweather&family=Libre+Baskerville&family=Domine&family=Prata&family=Suranna&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="no-scroll">
     <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loader"></div>
@@ -17,7 +17,11 @@
     <script>
         // Hide the loading screen when the page is fully loaded
         window.addEventListener("load", function () {
-            document.getElementById("loading-screen").style.display = "none";
+            let loadingScreen = document.getElementById("loading-screen");
+            loadingScreen.style.transition = "opacity 1.0s ease-out";
+            loadingScreen.style.opacity = "0";
+            setTimeout(() => loadingScreen.style.display = "none", 1000);
+            document.body.classList.remove("no-scroll");
         });
     </script>    
 

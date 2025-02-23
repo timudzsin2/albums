@@ -9,6 +9,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>loading</p>
+    </div>
+    <script>
+        // Hide the loading screen when the page is fully loaded
+        window.addEventListener("load", function () {
+            document.getElementById("loading-screen").style.display = "none";
+        });
+    </script>    
+
+
+
+
+    <!-- PC warning -->
+    <div id="pc-warning">
+        <h1 id="pc-warning-mark">!</h1>
+        <h1>Use a PC.</h1>
+        <h1 id="pc-warning-mark">!</h1>
+        <button onclick="disablePcWarning()">bypass</button>
+    </div>
+    <style id="pc-warning-displayer-css">
+        @media screen and (max-width: 1000px) {
+            * {
+                display: none !important;
+            }
+            #pc-warning, html, body, #pc-warning *{
+                display: block !important;
+            }
+        }
+    </style>
+    <script>
+        function disablePcWarning() {
+            const styleTag = document.getElementById("pc-warning-displayer-css");
+            if (styleTag) {
+                styleTag.remove(); // Removes the CSS rule
+            }
+        }
+    </script>
+
+
+
+
     <nav></nav>
     <div id="blonde-titlecard">
         <video autoplay muted loop playsinline disablePictureInPicture id="blonde-video">
@@ -803,6 +847,7 @@
     
 
 
+
     <script>
         // album előnezet zene gombok scriptje
         document.querySelectorAll('.sound-button').forEach(button => {
@@ -827,36 +872,8 @@
             });
         });
 
-        // az audio tagek hangerejét 60%-ra állítjuk
+        // az audio tagek hangerejét 45%-ra állítjuk
         document.querySelectorAll("audio").forEach(audio => audio.volume = 0.45);
-    </script>
-
-
-
-
-    <div id="pc-warning">
-        <h1 id="pc-warning-mark">!</h1>
-        <h1>Use a PC.</h1>
-        <h1 id="pc-warning-mark">!</h1>
-        <button onclick="disablePcWarning()">bypass</button>
-    </div>
-    <style id="pc-warning-displayer-css">
-        @media screen and (max-width: 1000px) {
-            * {
-                display: none !important;
-            }
-            #pc-warning, html, body, #pc-warning *{
-                display: block !important;
-            }
-        }
-    </style>
-    <script>
-        function disablePcWarning() {
-            const styleTag = document.getElementById("pc-warning-displayer-css");
-            if (styleTag) {
-                styleTag.remove(); // Removes the CSS rule
-            }
-        }
     </script>
 </body>
 </html>

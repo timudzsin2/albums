@@ -1367,7 +1367,7 @@ body.no-scroll {
 }
 #heartbreak-credits{
     height: 50vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/808s&heartbreak-credits.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/808s&heartbreak-credits2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1375,7 +1375,7 @@ body.no-scroll {
 }
 #minecraft-credits{
     height: 50vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/minecraft-credits.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/minecraft-credits2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

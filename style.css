@@ -454,7 +454,7 @@ body.no-scroll {
     background-image: url(kepek/trench.png);
     width:100%;
     aspect-ratio: 1 / 1;
-    background-size: contain;
+    background-size: cover;
 }
 #trench-article-article{
     background-color: black;
@@ -680,7 +680,7 @@ body.no-scroll {
     width:100%;
     aspect-ratio: 1 / 1;
     background-image: url(kepek/hithisisflume.png);
-    background-size: contain;
+    background-size: cover;
 }
 #hithisisflume-article-article{
     background-color: back;
@@ -723,10 +723,10 @@ body.no-scroll {
 }
 #flume-article-article-left-middle{
     height: 12vw;
-    background-image: url(kepek/hithisisflume-7.png);
+    background-image: url(kepek/hithisisflume-8.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 102%;
+    background-size: cover;
 }
 #flume-article-article-left-middle>img{
     width: 5vw;
@@ -934,7 +934,7 @@ body.no-scroll {
     background-image: url(kepek/minecraft-volumealpha.png);
     width:100%;
     aspect-ratio: 1 / 1;
-    background-size: contain;
+    background-size: cover;
 }
 #minecraft-article-article{
     background-color: white;
@@ -1035,6 +1035,7 @@ body.no-scroll {
     width: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+    user-select: none;
 }
 .diamond-block{
     background-image: url(kepek/minecraft-2.png);
@@ -1046,6 +1047,7 @@ body.no-scroll {
     width: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+    user-select: none;
 }
 
 
@@ -1302,10 +1304,6 @@ body.no-scroll {
 
 
 
-
-
-
-
 #pc-warning{
     display: none;
     background-color: black;
@@ -1329,4 +1327,67 @@ body.no-scroll {
     cursor: pointer;
     width:100%;
 }
+
+
+
+
+
+
+#blonde-credits{
+    height: 50vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/blonde-credits2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#trench-credits{
+    height: 50vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/trench-credits.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#iammusic-credits{
+    height: 50vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/iammusic-credits.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#flume-credits{
+    height: 50vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/hithisisflume-credits.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#heartbreak-credits{
+    height: 50vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/808s&heartbreak-credits.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#minecraft-credits{
+    height: 50vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/minecraft-credits.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#taboo-credits{
+    height: 50vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0)), url(kepek/taboo-credits.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 

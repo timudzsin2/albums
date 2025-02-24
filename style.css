@@ -1049,6 +1049,9 @@ body.no-scroll {
     overflow: hidden;
     user-select: none;
 }
+.stone-block>img, .diamond-block>img{
+    pointer-events: none;
+}
 
 
 

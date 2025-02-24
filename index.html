@@ -600,6 +600,34 @@
             </div>
 
             <script>
+                // Képek útvonalai
+                const imagePaths = [
+                    "kepek/destroy_stage_0.png",
+                    "kepek/destroy_stage_1.png",
+                    "kepek/destroy_stage_2.png",
+                    "kepek/destroy_stage_3.png",
+                    "kepek/destroy_stage_4.png",
+                    "kepek/destroy_stage_5.png",
+                    "kepek/destroy_stage_6.png",
+                    "kepek/destroy_stage_7.png",
+                    "kepek/destroy_stage_8.png",
+                    "kepek/destroy_stage_9.png"
+                ];
+
+                // Üres tömb a betöltött képeknek
+                const preloadedImages = [];
+
+                // Képek előtöltése for ciklussal
+                for (let i = 0; i < imagePaths.length; i++) {
+                    const img = new Image();
+                    img.src = imagePaths[i];
+                    preloadedImages.push(img);
+                }
+
+                
+                // fentebb előre betöltöm a 10 képet egy tömbbe, viszont nem ezt a tömböt használom mert feleslegesnek találom
+
+
                 document.querySelectorAll("#minecraft-bottom div").forEach(block => {
                 let clicks = 0; // Track clicks per block
 

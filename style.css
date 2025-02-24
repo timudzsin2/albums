@@ -1364,7 +1364,6 @@ body.no-scroll {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    transform: translateZ(0);
 }
 #heartbreak-credits{
     height: 50vw;

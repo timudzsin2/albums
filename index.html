@@ -35,7 +35,7 @@
         <h1 id="pc-warning-mark">!</h1>
         <h1>Use a PC.</h1>
         <h1 id="pc-warning-mark">!</h1>
-        <button onclick="disablePcWarning()">bypass</button>
+        <button onclick="incrementClickCount()">bypass</button>
     </div>
     <style id="pc-warning-displayer-css">
         @media screen and (max-width: 1100px) {
@@ -48,6 +48,15 @@
         }
     </style>
     <script>
+        let clickCount = 0;
+
+        function incrementClickCount() {
+            clickCount++;
+            if (clickCount >= 3) {
+                disablePcWarning();
+            }
+        }
+
         function disablePcWarning() {
             const styleTag = document.getElementById("pc-warning-displayer-css");
             if (styleTag) {
@@ -55,7 +64,6 @@
             }
         }
     </script>
-
 
 
 

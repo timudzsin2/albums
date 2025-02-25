@@ -1327,7 +1327,6 @@ body.no-scroll {
     border: none;
     color: rgb(4, 4, 4);
     font-size: 15vw;
-    cursor: pointer;
     width:100%;
 }
 
